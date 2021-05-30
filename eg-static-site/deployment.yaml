@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: eg-static-site-deployment-dad
   labels:
-    app: eg-static-site
+    app: eg-static-site-dad
 spec:
   selector:
     matchLabels:
-      app: eg-static-site
+      app: eg-static-site-dad
   replicas: 1
   template:
     metadata:
       labels:
-        app: eg-static-site
+        app: eg-static-site-dad
     spec:
       containers:
       - name: eg-static-site # ???
